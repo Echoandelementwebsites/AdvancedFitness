@@ -1,11 +1,10 @@
 
 > advancedfitness@1.0.0 start
-> next start -p 3000
+> next start
 
 ▲ Next.js 16.1.6
 - Local:         http://localhost:3000
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-✓ Ready in 349ms
-Killed
+✓ Ready in 306ms
