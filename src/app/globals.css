@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF0033;
+  --color-secondary: #0F0F0F;
+  --color-dark: #050505;
+  --color-light: #FFFFFF;
+  --color-surface-dark: rgba(20, 20, 20, 0.8);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-heading: var(--font-oswald), sans-serif;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-hero-overlay: linear-gradient(to top, #050505 0%, transparent 60%, rgba(0,0,0,0.7) 100%);
+}
 
 :root {
   --foreground-rgb: 255, 255, 255;
