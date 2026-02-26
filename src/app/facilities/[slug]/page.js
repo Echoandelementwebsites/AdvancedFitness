@@ -30,21 +30,21 @@ export default async function FacilityPage({ params }) {
     const title = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
     return (
-        <div className="min-h-screen bg-dark pt-24 pb-12">
+        <div className="min-h-screen bg-white pt-24 pb-12">
             <div className="container mx-auto px-4">
                 <div className="mb-8">
-                    <Link href="/#facilities" className="text-primary hover:text-white transition-colors flex items-center mb-4 text-lg">
+                    <Link href="/#facilities" className="text-gray-500 hover:text-primary transition-colors flex items-center mb-4 text-lg font-medium">
                         <span className="mr-2">←</span> Back to Facilities
                     </Link>
-                    <h1 className="text-4xl md:text-5xl font-heading font-bold text-white uppercase">{title} Gallery</h1>
+                    <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 uppercase">{title} Gallery</h1>
                     <div className="h-1 w-24 bg-primary mt-4 mb-8"></div>
                 </div>
 
                 {imageFiles.length > 0 ? (
                     <LightboxClient images={imageFiles} />
                 ) : (
-                    <div className="flex flex-col items-center justify-center h-64 border border-white/10 rounded-lg bg-zinc-900/50">
-                        <p className="text-xl text-gray-400 font-light">Gallery Coming Soon</p>
+                    <div className="flex flex-col items-center justify-center h-64 border border-gray-200 rounded-lg bg-gray-50">
+                        <p className="text-xl text-gray-500 font-light">Gallery Coming Soon</p>
                     </div>
                 )}
             </div>
