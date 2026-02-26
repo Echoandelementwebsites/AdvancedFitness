@@ -8,7 +8,7 @@ const Facilities = () => {
     const facilities = [
         {
             title: "Ground Floor",
-            description: "Reception & Cardio Zone",
+            description: "Reception",
             icon: <FaBuilding />,
             slug: "ground-floor",
             image: "/images/facilities/ground-floor/ground-floor-1.jpeg",
@@ -43,7 +43,7 @@ const Facilities = () => {
         },
         {
             title: "5th Floor",
-            description: "CrossFit Arena",
+            description: "Functional Fitness",
             icon: <FaRunning />,
             slug: "fifth-floor",
             image: "/images/facilities/fifth-floor/fifth-floor-1.jpeg",
