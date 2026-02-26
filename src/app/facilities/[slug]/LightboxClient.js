@@ -17,7 +17,7 @@ export default function LightboxClient({ images }) {
                 {images.map((src, i) => (
                     <div
                         key={i}
-                        className="break-inside-avoid relative group overflow-hidden rounded-lg cursor-pointer bg-zinc-800"
+                        className="break-inside-avoid relative group overflow-hidden rounded-lg cursor-pointer bg-gray-100 shadow-sm hover:shadow-lg transition-all duration-300"
                         onClick={() => {
                             setIndex(i);
                             setOpen(true);
