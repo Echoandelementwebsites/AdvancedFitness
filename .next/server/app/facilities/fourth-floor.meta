@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/facilities/layout,_N_T_/facilities/[slug]/layout,_N_T_/facilities/[slug]/page,_N_T_/facilities/fourth-floor"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/facilities/$d$slug/__PAGE__",
+    "/facilities/$d$slug",
+    "/facilities",
+    "/_index",
+    "/_head"
+  ]
+}
