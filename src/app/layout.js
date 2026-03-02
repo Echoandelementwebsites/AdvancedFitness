@@ -7,8 +7,15 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const oswald = Oswald({ subsets: ['latin'], variable: '--font-oswald' })
 
 export const metadata = {
-    title: "Advanced Fitness - Nairobi's Premier Gym",
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.advancedfitness.co.ke'),
+    title: {
+        template: '%s | Advanced Fitness',
+        default: "Advanced Fitness - Nairobi's Premier Gym",
+    },
     description: "Join Advanced Fitness in Nairobi. State-of-the-art equipment, boxing, HIIT, and personal training. Transform your body today.",
+    alternates: {
+        canonical: '/',
+    },
 }
 
 export default function RootLayout({ children }) {
