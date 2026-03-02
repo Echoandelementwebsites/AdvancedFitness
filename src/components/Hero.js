@@ -62,8 +62,9 @@ const Hero = () => {
                                 alt="Advanced Fitness Gym Athlete"
                                 fill
                                 className="object-cover rounded-none md:rounded-tl-[5rem] md:rounded-br-[5rem] shadow-2xl shadow-gray-200"
-                                priority
+                                priority={true}
                                 sizes="(max-width: 768px) 100vw, 50vw"
+                                placeholder="blur"
                             />
                             {/* Overlay Gradient */}
                              <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent pointer-events-none"></div>
