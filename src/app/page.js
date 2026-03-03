@@ -19,6 +19,8 @@ export default function Home() {
         name: 'Advanced Fitness',
         description: "Join Advanced Fitness in Nairobi. State-of-the-art equipment, boxing, HIIT, and personal training. Transform your body today.",
         url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.advancedfitness.co.ke',
+        telephone: '+254721992516',
+        email: 'advancedfitnesscentreltd@gmail.com',
         address: {
             '@type': 'PostalAddress',
             addressLocality: 'Nairobi',

@@ -19,7 +19,7 @@ const Navbar = () => {
                         <li><a href="#schedule" className="hover:text-primary transition-colors duration-300">Schedule</a></li>
                         <li><a href="#contact" className="hover:text-primary transition-colors duration-300">Contact</a></li>
                     </ul>
-                    <a href="https://wa.me/254700000000" className="flex items-center gap-2 bg-primary hover:bg-rose-600 text-white font-heading uppercase tracking-wide text-sm px-5 py-2.5 rounded-none transition-colors duration-300 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/40 border border-primary">
+                    <a href="https://wa.me/254721992516" className="flex items-center gap-2 bg-primary hover:bg-rose-600 text-white font-heading uppercase tracking-wide text-sm px-5 py-2.5 rounded-none transition-colors duration-300 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/40 border border-primary">
                         <FaWhatsapp className="text-lg" />
                         <span>Chat with us</span>
                     </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                         <li><a href="#schedule" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Schedule</a></li>
                         <li><a href="#contact" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Contact</a></li>
                         <li className="pt-2 border-t border-gray-100">
-                            <a href="https://wa.me/254700000000" className="flex items-center justify-center gap-2 bg-primary text-white font-heading uppercase tracking-wide py-3 px-4 w-full transition-colors duration-300">
+                            <a href="https://wa.me/254721992516" className="flex items-center justify-center gap-2 bg-primary text-white font-heading uppercase tracking-wide py-3 px-4 w-full transition-colors duration-300">
                                 <FaWhatsapp className="text-xl" />
                                 <span>Chat with us on WhatsApp</span>
                             </a>

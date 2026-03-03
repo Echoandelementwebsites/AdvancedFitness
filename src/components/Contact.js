@@ -24,33 +24,33 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {/* WhatsApp */}
-                    <a href="https://wa.me/254700000000" className="group bg-white p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:border-green-500/50 transition-all duration-300">
+                    <a href="https://wa.me/254721992516" className="group bg-white p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:border-green-500/50 transition-all duration-300">
                         <div className="w-16 h-16 mx-auto mb-6 bg-green-500/10 rounded-full flex items-center justify-center group-hover:bg-green-500/20 transition-colors">
                             <FaWhatsapp className="text-3xl text-green-500 group-hover:scale-110 transition-transform" />
                         </div>
                         <h3 className="text-xl font-heading font-bold mb-2 uppercase text-gray-900">WhatsApp</h3>
                         <p className="text-gray-500 text-sm mb-4">Chat with us instantly</p>
-                        <span className="block text-gray-900 font-bold tracking-wider group-hover:text-green-600 transition-colors">+254 700 000 000</span>
+                        <span className="block text-gray-900 font-bold tracking-wider group-hover:text-green-600 transition-colors">+254 721 992 516</span>
                     </a>
 
                     {/* Phone */}
-                    <a href="tel:+254700000000" className="group bg-white p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-500/50 transition-all duration-300">
+                    <a href="tel:+254721992516" className="group bg-white p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-500/50 transition-all duration-300">
                         <div className="w-16 h-16 mx-auto mb-6 bg-blue-500/10 rounded-full flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
                             <FaPhone className="text-3xl text-blue-500 group-hover:scale-110 transition-transform" />
                         </div>
                         <h3 className="text-xl font-heading font-bold mb-2 uppercase text-gray-900">Call Us</h3>
                         <p className="text-gray-500 text-sm mb-4">Speak to a trainer</p>
-                        <span className="block text-gray-900 font-bold tracking-wider group-hover:text-blue-600 transition-colors">+254 700 000 000</span>
+                        <span className="block text-gray-900 font-bold tracking-wider group-hover:text-blue-600 transition-colors">+254 721 992 516</span>
                     </a>
 
                     {/* Email */}
-                    <a href="mailto:info@advancedfitness.co.ke" className="group bg-white p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+                    <a href="mailto:advancedfitnesscentreltd@gmail.com" className="group bg-white p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300">
                         <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                             <FaEnvelope className="text-3xl text-primary group-hover:scale-110 transition-transform" />
                         </div>
                         <h3 className="text-xl font-heading font-bold mb-2 uppercase text-gray-900">Email</h3>
                         <p className="text-gray-500 text-sm mb-4">Send us an inquiry</p>
-                        <span className="block text-gray-900 font-bold tracking-wider group-hover:text-primary transition-colors">info@advancedfitness.co.ke</span>
+                        <span className="block text-gray-900 font-bold group-hover:text-primary transition-colors break-all">advancedfitnesscentreltd@gmail.com</span>
                     </a>
                 </div>
             </div>

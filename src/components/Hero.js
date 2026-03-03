@@ -35,7 +35,7 @@ const Hero = () => {
                                 START NOW
                             </a>
                             <a
-                                href="https://wa.me/254700000000"
+                                href="https://wa.me/254721992516"
                                 className="bg-transparent border border-gray-300 hover:border-primary text-gray-900 font-heading font-bold uppercase tracking-wider py-4 px-10 text-center rounded-none backdrop-blur-sm transition-all hover:bg-white"
                             >
                                 WHATSAPP US
