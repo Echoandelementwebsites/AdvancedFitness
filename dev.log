@@ -7,16 +7,6 @@
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-Attention: Next.js now collects completely anonymous telemetry regarding usage.
-This information is used to shape Next.js' roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://nextjs.org/telemetry
-
-✓ Ready in 716ms
+✓ Ready in 663ms
 ○ Compiling / ...
- GET / 200 in 8.4s (compile: 7.3s, render: 1020ms)
- GET /our-story 200 in 118ms (compile: 6ms, render: 112ms)
-✓ Compiled in 1832ms
- GET / 200 in 1583ms (compile: 702ms, render: 881ms)
- GET / 200 in 1937ms (compile: 1072ms, render: 865ms)
- GET / 200 in 369ms (compile: 11ms, render: 358ms)
+ GET / 200 in 9.8s (compile: 8.5s, render: 1291ms)

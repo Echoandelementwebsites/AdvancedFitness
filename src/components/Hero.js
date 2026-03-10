@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "next/image"
 import heroImg from "../images/hero.jpg"
 
 const Hero = () => {
@@ -56,16 +55,17 @@ const Hero = () => {
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-primary/10 blur-[100px] rounded-full z-0"></div>
 
                         <div className="relative w-full h-full z-10">
-                            {/* Image Frame */}
-                             <Image
-                                src={heroImg}
-                                alt="Advanced Fitness Gym Athlete"
-                                fill
-                                className="object-cover rounded-none md:rounded-tl-[5rem] md:rounded-br-[5rem] shadow-2xl shadow-gray-200"
-                                priority={true}
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                placeholder="blur"
-                            />
+                            {/* Video Frame */}
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                poster={heroImg.src}
+                                className="w-full h-full object-cover rounded-none md:rounded-tl-[5rem] md:rounded-br-[5rem] shadow-2xl shadow-gray-200"
+                            >
+                                <source src="https://res.cloudinary.com/dtgzm5xca/video/upload/v1773177198/omkirwoq07oqfnsskmyi.mp4" type="video/mp4" />
+                            </video>
                             {/* Overlay Gradient */}
                              <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent pointer-events-none"></div>
                         </div>
