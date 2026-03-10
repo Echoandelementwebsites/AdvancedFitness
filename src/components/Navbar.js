@@ -9,8 +9,9 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <Link href="/" className="text-2xl font-heading font-bold uppercase tracking-wider text-primary hover:text-gray-900 transition-colors">
-                    Advanced<span className="text-gray-900">Fitness</span>
+                <Link href="/" className="flex items-center gap-3 text-2xl font-heading font-bold uppercase tracking-wider text-primary hover:text-gray-900 transition-colors">
+                    <img src="/images/logo.png" alt="Advanced Fitness Logo" className="w-10 h-10 object-contain" />
+                    <span className="hidden md:inline-block">Advanced<span className="text-gray-900">Fitness</span></span>
                 </Link>
 
                 <div className="hidden md:flex items-center space-x-8">

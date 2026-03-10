@@ -18,3 +18,5 @@ https://nextjs.org/telemetry
  GET /our-story 200 in 118ms (compile: 6ms, render: 112ms)
 ✓ Compiled in 1832ms
  GET / 200 in 1583ms (compile: 702ms, render: 881ms)
+ GET / 200 in 1937ms (compile: 1072ms, render: 865ms)
+ GET / 200 in 369ms (compile: 11ms, render: 358ms)
