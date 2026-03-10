@@ -1,8 +1,17 @@
-import fs from 'fs'
-import path from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import LightboxClient from './LightboxClient'
+
+const imageCounts = {
+    'ground-floor': 13,
+    'first-floor': 7,
+    'mezzanine': 4,
+    'second-floor': 9,
+    'third-floor': 3,
+    'fourth-floor': 19,
+    'fifth-floor': 13,
+    'sixth-floor': 11
+};
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -23,27 +32,20 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-    const facilitiesDir = path.join(process.cwd(), 'public/images/facilities');
-    const folders = fs.readdirSync(facilitiesDir).filter(file => {
-        return fs.statSync(path.join(facilitiesDir, file)).isDirectory();
-    });
-
-    return folders.map((slug) => ({
+    return Object.keys(imageCounts).map((slug) => ({
         slug: slug,
-    }))
+    }));
 }
 
 export default async function FacilityPage({ params }) {
     const { slug } = await params;
-    const facilitiesDir = path.join(process.cwd(), 'public/images/facilities', slug);
 
-    if (!fs.existsSync(facilitiesDir)) {
+    if (!(slug in imageCounts)) {
         notFound();
     }
 
-    const imageFiles = fs.readdirSync(facilitiesDir)
-        .filter(file => /\.(jpg|jpeg|png|webp)$/i.test(file))
-        .map(file => `/images/facilities/${slug}/${file}`);
+    const count = imageCounts[slug];
+    const imageFiles = Array.from({ length: count }, (_, i) => `/images/facilities/${slug}/${slug}-${i + 1}.jpeg`);
 
     const title = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
