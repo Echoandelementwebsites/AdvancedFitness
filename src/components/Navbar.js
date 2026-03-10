@@ -9,15 +9,16 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <Link href="/" className="text-2xl font-heading font-bold uppercase tracking-wider text-primary hover:text-gray-900 transition-colors">
-                    Advanced<span className="text-gray-900">Fitness</span>
+                <Link href="/" className="flex items-center gap-3 text-2xl font-heading font-bold uppercase tracking-wider text-primary hover:text-gray-900 transition-colors">
+                    <img src="/images/logo.png" alt="Advanced Fitness Logo" className="w-10 h-10 object-contain" />
+                    <span className="hidden md:inline-block">Advanced<span className="text-gray-900">Fitness</span></span>
                 </Link>
 
                 <div className="hidden md:flex items-center space-x-8">
                     <ul className="flex space-x-8 font-heading uppercase tracking-wide text-sm font-medium text-gray-700">
-                        <li><a href="#about" className="hover:text-primary transition-colors duration-300">About</a></li>
-                        <li><a href="#schedule" className="hover:text-primary transition-colors duration-300">Schedule</a></li>
-                        <li><a href="#contact" className="hover:text-primary transition-colors duration-300">Contact</a></li>
+                        <li><a href="/#our-story" className="hover:text-primary transition-colors duration-300">Our Story</a></li>
+                        <li><a href="/#schedule" className="hover:text-primary transition-colors duration-300">Schedule</a></li>
+                        <li><a href="/#contact" className="hover:text-primary transition-colors duration-300">Contact</a></li>
                     </ul>
                     <a href="https://wa.me/254721992516" className="flex items-center gap-2 bg-primary hover:bg-rose-600 text-white font-heading uppercase tracking-wide text-sm px-5 py-2.5 rounded-none transition-colors duration-300 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/40 border border-primary">
                         <FaWhatsapp className="text-lg" />
@@ -37,9 +38,9 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white border-t border-gray-100">
                     <ul className="flex flex-col p-4 space-y-4 font-heading uppercase tracking-wide text-sm font-medium text-gray-900">
-                        <li><a href="#about" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>About</a></li>
-                        <li><a href="#schedule" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Schedule</a></li>
-                        <li><a href="#contact" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Contact</a></li>
+                        <li><a href="/#our-story" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Our Story</a></li>
+                        <li><a href="/#schedule" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Schedule</a></li>
+                        <li><a href="/#contact" className="block hover:text-primary transition-colors duration-300" onClick={() => setIsOpen(false)}>Contact</a></li>
                         <li className="pt-2 border-t border-gray-100">
                             <a href="https://wa.me/254721992516" className="flex items-center justify-center gap-2 bg-primary text-white font-heading uppercase tracking-wide py-3 px-4 w-full transition-colors duration-300">
                                 <FaWhatsapp className="text-xl" />
