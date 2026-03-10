@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { FaDumbbell, FaPray, FaFistRaised, FaRunning, FaBuilding, FaLayerGroup } from "react-icons/fa"
+import { FaDumbbell, FaPray, FaFistRaised, FaRunning, FaBuilding, FaLayerGroup, FaFemale } from "react-icons/fa"
 import { GiWeightLiftingUp } from "react-icons/gi"
 
 const Facilities = () => {
@@ -26,6 +26,13 @@ const Facilities = () => {
             icon: <FaDumbbell />,
             slug: "first-floor",
             image: "/images/facilities/first-floor/first-floor-1.jpeg",
+        },
+        {
+            title: "Second Floor",
+            description: "Ladies Only Gym",
+            icon: <FaFemale />,
+            slug: "second-floor",
+            image: "/images/facilities/second-floor/second-floor-1.jpeg",
         },
         {
             title: "3rd Floor",
